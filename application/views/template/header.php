@@ -12,14 +12,14 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse mt-auto" id="navbarNavAltMarkup">
+  <div class="collapse navbar-collapse mt-auto justify-content-center" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <a class="nav-link active" href="<?=base_url('home');?>">Beranda <span class="sr-only">(current)</span></a>
       <a class="nav-link" href="<?=base_url('home/login');?>">Login</a>
       <a class="nav-link" href="<?=base_url('home/about');?>">About</a>
-      <a class="nav-link" href="#">Tipe Sepeda</a>
-      <a class="nav-link" href="#">Pengajuan Sewa</a>
-      <a class="nav-link" href="#">Panduan dan Rute</a>
+      <a class="nav-link" href="<?=base_url('home/tipe');?>">Tipe Sepeda</a>
+      <a class="nav-link" href="<?=base_url('home/pengajuan');?>">Pengajuan Sewa</a>
+      <a class="nav-link" href="<?=base_url('home/rute')?>">Panduan dan Rute</a>
     </div>
   </div>
 </nav>
