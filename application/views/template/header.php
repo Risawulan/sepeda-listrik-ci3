@@ -16,6 +16,7 @@
     <div class="navbar-nav">
       <a class="nav-link active" href="<?=base_url('home');?>">Beranda <span class="sr-only">(current)</span></a>
       <a class="nav-link" href="<?=base_url('home/login');?>">Login</a>
+      <a class="nav-link" href="<?=base_url('home/register');?>">Register</a>
       <a class="nav-link" href="<?=base_url('home/about');?>">About</a>
       <a class="nav-link" href="<?=base_url('home/tipe');?>">Tipe Sepeda</a>
       <a class="nav-link" href="<?=base_url('home/pengajuan');?>">Pengajuan Sewa</a>
