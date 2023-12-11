@@ -19,4 +19,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         $this->load->view('about');
         $this->load->view('template/footer');
     }
+
+    public function tipe(){
+        $this->load->view('template/header');
+        $this->load->view('tipe');
+        $this->load->view('template/footer');
+    }
+
+    public function pengajuan(){
+        $this->load->view('template/header');
+        $this->load->view('pengajuansewa');
+        $this->load->view('template/footer');
+    }
+
+    public function rute(){
+        $this->load->view('template/header');
+        $this->load->view('rute');
+        $this->load->view('template/footer');
+    }
  }

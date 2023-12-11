@@ -10,9 +10,7 @@
 }
 
 .navbar-nav {
-    margin-left: 123px;
-    display: flex;
-    align-items: center;
+    margin-left: -5px;
     margin-bottom: -16px; 
 }
 
