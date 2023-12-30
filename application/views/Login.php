@@ -5,6 +5,12 @@
             <?php echo $this->session->flashdata('success'); ?>
         </div>
     <?php endif; ?>
+
+<?php if ($this->session->flashdata('error')): ?>
+    <div class="alert alert-danger" role="alert" id="error-message">
+        <?= $this->session->flashdata('error'); ?>
+    </div>
+<?php endif; ?>
     <form action="<?= base_url('user/login') ?>" method="POST">
         <div class="form-group row">
             <label for="email" class="col-sm-2 col-form-label" style="font-size: 25px; color: #387780; font-weight:bold;">Email:</label>
@@ -35,6 +41,10 @@
     $(document).ready(function() {
         if ($("#success-message").length) {
             $("#success-message").fadeIn().delay(3000).fadeOut();
+        }
+
+        if ($("#error-message").length) {
+            $("#error-message").fadeIn().delay(3000).fadeOut();
         }
     });
 </script>

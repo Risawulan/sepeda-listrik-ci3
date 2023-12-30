@@ -36,8 +36,11 @@ class User extends CI_Controller {
         $this->session->set_flashdata('success', 'Registrasi berhasil! Silakan login.');
         redirect('home/login');
     }
+
+    public function logout() {
+        $this->session->unset_userdata('user_id');
+        $this->session->unset_userdata('username');
+        redirect('home/login');
+    }
  
 }
-
-/* End of file Dashboard.php */
-/* Location: ./application/controllers/Dashboard.php */
